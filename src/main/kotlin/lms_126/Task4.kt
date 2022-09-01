@@ -1,6 +1,8 @@
 package lms_126
-
 fun task4() {
-
-    TODO("Erase this line and write your solution")
+    /*
+    IF X is greater than Y
+    then X is greater
+    ELSE Y is greater
+     */
 }

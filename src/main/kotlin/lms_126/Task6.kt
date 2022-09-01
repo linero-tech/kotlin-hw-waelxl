@@ -1,6 +1,7 @@
 package lms_126
-
 fun task6() {
-
-    TODO("Erase this line and write your solution")
+    /*
+    FOR number = 1 to 100
+    OUTPUT number
+     */
 }
