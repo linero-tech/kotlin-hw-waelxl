@@ -9,7 +9,7 @@ fun task10() {
          1. INPUT user password 6 length
          2. IF user password length < 6
              3. OUTPUT password error
-         3. ELSE
-             1. Create account
+    5. ELSE
+         1. Create account
      */
 }
