@@ -1,6 +1,7 @@
 package lms_127
-
 fun task2() {
-
-    TODO("Erase this line and write your solution")
+    val name = "hallo wael"
+    val country = " you are from syria"
+    val month = " and you were born in januari"
+    println("$name,$country$month")
 }
