@@ -1,9 +1,9 @@
 package lms_127
 fun task1() {
-  val country = "sweden"
-  val capital = "stockholm"
-  val currency = "sek"
-  println("country $country")
-  println("capital $capital")
-  println("currrency $currency")
+  val country = "Sweden"
+  val capital = "Stockholm"
+  val currency = "SEK"
+  println("Country $country")
+  println("Capital $capital")
+  println("Currrency $currency")
 }
