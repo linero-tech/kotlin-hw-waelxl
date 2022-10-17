@@ -1,16 +1,17 @@
 package lms_130
 
-fun task10(password: String): Boolean {
-    val result = true
-    if (password.length < 6) return false
-    else if (password.length > 10) return false
-    if (password.firstOrNull { it.isDigit() } == null) return false
-    if (password.filter { it.isLetter() }.firstOrNull { it.isUpperCase() } == null) return false
-    if (password.filter { it.isLetter() }.firstOrNull { it.isLowerCase() } == null) return false
-    if (password.firstOrNull { !it.isLetterOrDigit() } == null) return false
-    return result
-}
+fun task9(temperature: String): String {
+    val magnitude = temperature.substring(0, temperature.length-1).toDouble()
+    val isCelsius = temperature.contains("C", ignoreCase = true)
+    val result = if (isCelsius){
+        val conversion = (9.0 * magnitude / 5.0) + 32.0
+        "${conversion.toInt()}F"
+    }else {
+        val conversion = (5.0 * (magnitude - 32.0)) / 9.0
+        "${conversion.toInt()}C"
+    }
 
-fun main(){
-    println(task10("123456dD$7"))
+
+
+    return result
 }
