@@ -11,7 +11,6 @@ fun task9(temperature: String): String {
         "${conversion.toInt()}C"
     }
 
-
-
+    
     return result
 }
