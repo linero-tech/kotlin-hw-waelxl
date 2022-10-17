@@ -1,16 +1,26 @@
 package lms_130
 
-fun task9(temperature: String): String {
-    val magnitude = temperature.substring(0, temperature.length-1).toDouble()
-    val isCelsius = temperature.contains("C", ignoreCase = true)
-    val result = if (isCelsius){
-        val conversion = (9.0 * magnitude / 5.0) + 32.0
-        "${conversion.toInt()}F"
-    }else {
-        val conversion = (5.0 * (magnitude - 32.0)) / 9.0
-        "${conversion.toInt()}C"
+fun task10(items: List<Int>): List<Int> {
+    val result = mutableListOf<Int>()
+
+    var number = 0
+
+    for (i in items){
+        if (i  % 2 == 0){
+            number = i * 2
+            result.add(number)
+
+        }else{ i % 2 == 1
+            number = i * 3
+
+            result.add(number)
+
+        }
     }
 
-    
     return result
+
+}
+fun main(){
+    println(task10(items = listOf(1, 2, 3, 4, 5 )))
 }
