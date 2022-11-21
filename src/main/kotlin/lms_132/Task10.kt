@@ -1,6 +1,15 @@
 package lms_132
 
 fun task10(items: List<String?>): Int? {
+        var result: Int? = null
+        items.forEachIndexed() { index, item ->
+            if (item == "Nemo") {
+                result = index
+            }
+        }
+        return result
+    }
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
-}
+    fun main() {
+        println(task10(items = listOf("I", "cannot", "Nemo", "find", "him")))
+    }

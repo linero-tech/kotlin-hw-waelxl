@@ -1,6 +1,9 @@
 package lms_132
 
 fun task1(sentence: String?): Int {
+        return sentence?.length ?: 0
+    }
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
-}
+    fun main() {
+        println(task1(sentence = null))
+    }
