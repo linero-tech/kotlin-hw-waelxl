@@ -1,10 +1,6 @@
 package lms_133
 
-fun task1(sentence: String?): Int {
-
-    return sentence?.length ?: 0
-}
-
+fun remover(sentence: String): String = sentence.replace(Regex("[aeiouAEIOU]"), "")
 fun main() {
-    println(task1(sentence = null))
+    println(remover(sentence = "Sweden is nice"))
 }

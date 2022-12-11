@@ -1,17 +1,6 @@
 package lms_133
 
-fun task4(sentence: String?): Map<Char, Int> {
-    val result = mutableMapOf('a' to 0, 'e' to 0, 'i' to 0, 'o' to 0, 'u' to 0)
-    if (sentence.isNullOrEmpty()) result.clear()
-    else {
-        sentence.toLowerCase().forEach { letter ->
-            result.forEach { key, value ->
-                if (key == letter) result.put(key, value + 1)
-            }
-        }
-    }
-    return result.toSortedMap()
-}
+fun washing(washes: Int, months: Int): Double = (months * 30 * washes * 21).toDouble() / 60
 fun main() {
-    println(task4(sentence = null))
+    println(washing(washes = 8, months = 7))
 }
