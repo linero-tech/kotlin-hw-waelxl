@@ -1,3 +1,10 @@
 package lms_133
 
-// TODO(Create your function here)
+fun task1(sentence: String?): Int {
+
+    return sentence?.length ?: 0
+}
+
+fun main() {
+    println(task1(sentence = null))
+}

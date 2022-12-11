@@ -6,5 +6,5 @@ fun task3(sentence: String?): String {
     }
 
     fun main() {
-        println(task3(sentence = "*"))
+        println(task3(sentence = "I live in SwEdEn"))
     }
